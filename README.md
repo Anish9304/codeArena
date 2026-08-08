@@ -1,7 +1,7 @@
 <h1 align="center">✨ Full-Stack Interview Platform ✨</h1>
 
-<img width="1400" height="897" alt="image" src="https://github.com/user-attachments/assets/58cd16de-a7cf-4d93-a306-3d7078448241" />
-<img width="1400" height="895" alt="image" src="https://github.com/user-attachments/assets/5d8d8a46-02f5-4626-b655-b202e767cd05" />
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/58cd16de-a7cf-4d93-a306-3d7078448241" />
+<img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/5d8d8a46-02f5-4626-b655-b202e767cd05" />
 
 
 ✨ Highlights:
