@@ -2,7 +2,25 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
-  withCredentials: true, // by adding this field browser will send the cookies to server automatically, on every single req
+  withCredentials: true,
+});
+
+let getToken = null;
+
+export const setGetToken = (fn) => {
+  getToken = fn;
+};
+
+axiosInstance.interceptors.request.use(async (config) => {
+  if (getToken) {
+    const token = await getToken();
+
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+  }
+
+  return config;
 });
 
 export default axiosInstance;

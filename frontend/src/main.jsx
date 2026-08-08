@@ -1,3 +1,4 @@
+import ClerkAxiosProvider from "./components/ClerkAxiosProvider.jsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
@@ -20,8 +21,10 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-          <App />
-        </ClerkProvider>
+  <ClerkAxiosProvider>
+    <App />
+  </ClerkAxiosProvider>
+</ClerkProvider>
       </QueryClientProvider>
     </BrowserRouter>
   </StrictMode>
